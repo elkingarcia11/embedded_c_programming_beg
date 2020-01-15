@@ -346,3 +346,10 @@
 2020-01-10 13:43:34,073 [INFO] McuPeriphSelectorTable:90 - getCtxTitle()USB OTG_FS
 2020-01-10 14:07:46,118 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread
 2020-01-10 14:07:46,120 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread
+2020-01-14 17:10:26,462 [INFO] Activator:176 - 
+
+
+2020-01-14 17:10:26,465 [INFO] Activator:177 - !SESSION log4j initialized
+2020-01-14 17:10:28,647 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2020-01-14 17:10:44,727 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread
+2020-01-14 17:10:44,730 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread

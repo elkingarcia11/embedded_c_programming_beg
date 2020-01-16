@@ -1,2 +1,4 @@
-/host/.metadata
-/target/.metadata
+host/.metadata
+target/.metadata
+host/.metadata/*
+target/.metadata/*

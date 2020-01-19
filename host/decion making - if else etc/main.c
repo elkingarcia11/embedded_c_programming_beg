@@ -18,7 +18,7 @@ int main()
 	} else {
 		printf("You are not allowed to vote!\n");
 	}*/
-
+	/*
 	float n1 = 0, n2 = 0;
 
 
@@ -50,6 +50,38 @@ int main()
 			}
 		}
 	}
+
+	double income = 0, taxR = 0, taxP = 0;
+
+	printf("Enter total income: ");
+
+	if(scanf("%lf", &income) == 0){
+		printf("Error! Invalid input \n");
+		return 0;
+	}
+	if (income < 0) {
+		printf("Error! Invalid input \n");
+		return 0;
+	} else if (income <= 9525) {
+		taxR = 0;
+		taxP = income * (taxR);
+	} else if (income >= 9526 && income <= 38700) {
+		taxR = .12;
+		taxP = income * (taxR);
+	} else if (income >= 38701 && income <= 82500) {
+		taxR = .22;
+		taxP = income * (taxR);
+	} else {
+		taxR = .32;
+		taxP = income * (taxR)+1000;
+	}
+
+	printf("The tax payable is $%lf", taxP);*/
+
+	int a = 5;
+
+	a = 0 ? (a < 9) : a++;
+	printf("%d", a);
 
 	return 0;
 }

@@ -32,7 +32,7 @@ int main(void)
 	 * or
 	 * *pClkCtrlReg |= 0x08;
 	 */
-	*pClkCtrlReg |= (1<<3);
+	*pClkCtrlReg |= (1 << 3);
 
 
 	/* First we clear bit position 24 and 25, bc 25 is 0
@@ -41,22 +41,30 @@ int main(void)
 	*pPortDModeReg &= 0xFCFFFFFF;
 	 */
 
-	*pPortDModeReg &= ~(3<<24);
+	*pPortDModeReg &= ~(3 << 24);
 
 	 /* Then set 24th bit to 1 0x1000000
 	  *
 	  * *pPortDModeReg |= 0x01000000);
 	  * */
 
-	*pPortDModeReg |= (1<<24);
+	*pPortDModeReg |= (1 << 24);
 
 	/* Set 12th bit pos to 1
 	 * every other bit pos 0
 	 * */
-	/* 0x1000*/
+	/* 0x1000
+	*pPortDOutReg |= (1<<12);*/
+	while(1){
 
-	*pPortDOutReg |= (1<<12);
+		*pPortDOutReg |= (1 << 12);
 
+		for(uint32_t i = 0; i<200000;i++);
 
-	while(1);
+		*pPortDOutReg &= ~(1 << 12);
+
+		for(uint32_t i = 0; i<200000;i++);
+	}
+	return 0;
+
 }

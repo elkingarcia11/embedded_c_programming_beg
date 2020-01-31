@@ -13,16 +13,22 @@
 
 #include <stdio.h>
 #include <stdint.h>
-
-struct DataSet
+/*
+typedef struct
 {
 	char   data1;
 	int    data2;
 	char   data3;
 	short  data4;
-}__attribute__((packed));
-
-struct DataSet data; //This consumes 12 bytes in memory (RAM)
+}__attribute__((packed));*/
+typedef struct
+{
+	char   data1;
+	int    data2;
+	char   data3;
+	short  data4;
+}DataSet_t;
+DataSet_t data; //This consumes 12 bytes in memory (RAM)
 
 int main()
 {
